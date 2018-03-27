@@ -1,0 +1,6 @@
+framework module SFLibrary {
+  umbrella header "SFLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

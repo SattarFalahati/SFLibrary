@@ -1,0 +1,6 @@
+framework module Pods_SFLibrary_Tests {
+  umbrella header "Pods-SFLibrary_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SFLibrary (0.1.0)
+
+DEPENDENCIES:
+  - SFLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  SFLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SFLibrary: e2e61ce9deb0069fde041bfd269094c4b232b78a
+
+PODFILE CHECKSUM: b9709b6c3113d57ae833a4bccd38e0b6466e2403
+
+COCOAPODS: 1.4.0

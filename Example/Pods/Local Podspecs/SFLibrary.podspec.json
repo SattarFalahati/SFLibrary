@@ -1,0 +1,22 @@
+{
+  "name": "SFLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of SFLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sattar.falahati@gmail.com/SFLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sattar.falahati@gmail.com": "sattar.falahati@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sattar.falahati@gmail.com/SFLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SFLibrary/Classes/**/*"
+}
