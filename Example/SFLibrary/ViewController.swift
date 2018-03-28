@@ -8,17 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import SFLibrary
 
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    // MARK: -
+    
+    @IBOutlet weak var imgTest: UIImageView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        imgTest.roundViewWith(borderColor: .white, borderWidth: 2)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

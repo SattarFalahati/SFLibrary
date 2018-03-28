@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SFLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SFLibrary.'
+  s.summary          = 'A swift helper Library that help you to better programming life and make projects faster and easier'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+"Enjoy the helper library, it makes you to code easily and faster, you can import it in all your project and use all the advantages of the library"
                        DESC
 
-  s.homepage         = 'https://github.com/sattar.falahati@gmail.com/SFLibrary'
+  s.homepage         = 'https://github.com/SattarFalahati/SFLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sattar.falahati@gmail.com' => 'sattar.falahati@gmail.com' }
-  s.source           = { :git => 'https://github.com/sattar.falahati@gmail.com/SFLibrary.git', :tag => s.version.to_s }
+  s.author           = { 'Sattar Falahati' => 'sattar.falahati@gmail.com' }
+  s.source           = { :git => 'https://github.com/SattarFalahati/SFLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SFLibrary/Classes/**/*'
+  # s.source_files = 'SFLibrary/Classes/**/*' , 'SFLibrary/**/**/*', 'SFLibrary/Classes/*.swift'
+  s.source_files = 'SFLibrary/**/**/*'
   
   # s.resource_bundles = {
   #   'SFLibrary' => ['SFLibrary/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -22,7 +22,7 @@ pod 'SFLibrary'
 
 ## Author
 
-sattar.falahati@gmail.com, sattar.falahati@gmail.com
+sattar.falahati@gmail.com
 
 ## License
 
