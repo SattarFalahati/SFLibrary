@@ -1,6 +1,6 @@
 # SFLibrary
 
-A swift helper Library that help you to better programming life and make projects faster and easier
+A swift helper Library that help you to have better programming life and make projects faster and easier
 
 Version 0.1.0
 
@@ -12,7 +12,7 @@ Version 0.1.0
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-SFLibrary works on iOS 9+
+SFLibrary works on iOS 9+ , swift 4
 
 ## Installation
 

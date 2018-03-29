@@ -15,13 +15,34 @@ class ViewController: UIViewController
     // MARK: -
     
     @IBOutlet weak var imgTest: UIImageView!
+    @IBOutlet weak var imgNewTest: UIImageView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-    
-        imgTest.roundViewWith(borderColor: .white, borderWidth: 2)
         
+        setupUI()
+    }
+    
+    func setupUI()
+    {
+        // Reound View Test
+         imgTest.roundViewWith(borderColor: .white, borderWidth: 2)
+        
+        // Corner Radius
+        // imgTest.cornerRadiusWith(radius: 10, borderColor: .white, borderWidth: 2)
+        
+        // Borser
+        // imgTest.setBorderWith(borderColor: .brown, borderWidth: 2)
+        
+        // Create image from view
+        imgNewTest.image = imgTest.createImageFromView()
+        imgNewTest.roundViewWith(borderColor: .clear, borderWidth: 0)
+        
+        // Shadow
+        // imgTest.setShadowWith(shadowColor: .white, shadowOffset: CGSize(width: 0, height: 0), shadowOpacity: 1, shadowRadius: 10)
+     
+        view.backgroundColor = UIColor().colorWithHex(string: "8670ee", colorAlpha: 1)
     }
 }
 
