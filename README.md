@@ -4,6 +4,7 @@ A swift helper Library that help you to have better programming life and make pr
 
 Version 0.2.0
 
+<!--[![CI Status](http://img.shields.io/travis/sattar_falahati/SFramework.svg?style=flat)](https://travis-ci.org/sattar_falahati/SFramework) -->
 [![License](https://img.shields.io/cocoapods/l/SFLibrary.svg?style=flat)](http://cocoapods.org/pods/SFLibrary)
 [![Platform](https://img.shields.io/cocoapods/p/SFLibrary.svg?style=flat)](http://cocoapods.org/pods/SFLibrary)
 
