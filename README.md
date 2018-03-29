@@ -2,7 +2,7 @@
 
 A swift helper Library that help you to have better programming life and make projects faster and easier
 
-Version 0.1.0
+Version 0.2.0
 
 [![License](https://img.shields.io/cocoapods/l/SFLibrary.svg?style=flat)](http://cocoapods.org/pods/SFLibrary)
 [![Platform](https://img.shields.io/cocoapods/p/SFLibrary.svg?style=flat)](http://cocoapods.org/pods/SFLibrary)
