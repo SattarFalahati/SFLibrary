@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFLibrary'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A swift helper Library that help you to better programming life and make projects faster and easier'
 
 # This description is used to generate tags and improve search results.

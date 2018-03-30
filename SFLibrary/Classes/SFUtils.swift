@@ -1,5 +1,5 @@
 //
-//  Utils.swift
+//  SFUtils.swift
 //  Pods
 //
 //  Created by sattar.falahati on 29/03/18.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Utils: NSObject
+class SFUtils: NSObject
 {
     
     // MARK: - Navigation bar

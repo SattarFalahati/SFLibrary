@@ -1,5 +1,5 @@
 //
-//  UIColorExtentions.swift
+//  SFUIColorExtentions.swift
 //  Pods
 //
 //  Created by sattar.falahati on 29/03/18.

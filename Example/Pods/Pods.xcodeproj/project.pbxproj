@@ -14,14 +14,18 @@
 		37BB461C35DD04F255B880471D27C211 /* Pods-SFLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A59AF5386C2415008C847A29E84AF76 /* Pods-SFLibrary_Example-dummy.m */; };
 		86AE23A223999DFBE3ACD7F43F071C67 /* Pods-SFLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3B2327F26C843E0AFCDE09C2F93FCC /* Pods-SFLibrary_Tests-dummy.m */; };
 		AED958EBD5EC1FA25F6134FB6AE8F2A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DC38B27E206AA8A100DA9C89 /* UIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38B27D206AA8A100DA9C89 /* UIViewExtentions.swift */; };
-		DC38B27F206AACC800DA9C89 /* UIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38B27D206AA8A100DA9C89 /* UIViewExtentions.swift */; };
-		DC57A59F206D189500005E6D /* UIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A59E206D189500005E6D /* UIColorExtentions.swift */; };
-		DC57A5A0206D189500005E6D /* UIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A59E206D189500005E6D /* UIColorExtentions.swift */; };
-		DC57A5A2206D1ABA00005E6D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A1206D1ABA00005E6D /* Utils.swift */; };
-		DC57A5A3206D1ABA00005E6D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A1206D1ABA00005E6D /* Utils.swift */; };
-		DC57A5A5206D1CBE00005E6D /* UserDefaultsExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A4206D1CBE00005E6D /* UserDefaultsExtention.swift */; };
-		DC57A5A6206D1CBE00005E6D /* UserDefaultsExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A4206D1CBE00005E6D /* UserDefaultsExtention.swift */; };
+		DC38B27E206AA8A100DA9C89 /* SFUIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38B27D206AA8A100DA9C89 /* SFUIViewExtentions.swift */; };
+		DC38B27F206AACC800DA9C89 /* SFUIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38B27D206AA8A100DA9C89 /* SFUIViewExtentions.swift */; };
+		DC57A59F206D189500005E6D /* SFUIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A59E206D189500005E6D /* SFUIColorExtentions.swift */; };
+		DC57A5A0206D189500005E6D /* SFUIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A59E206D189500005E6D /* SFUIColorExtentions.swift */; };
+		DC57A5A2206D1ABA00005E6D /* SFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A1206D1ABA00005E6D /* SFUtils.swift */; };
+		DC57A5A3206D1ABA00005E6D /* SFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A1206D1ABA00005E6D /* SFUtils.swift */; };
+		DC57A5A5206D1CBE00005E6D /* SFUserDefaultsExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A4206D1CBE00005E6D /* SFUserDefaultsExtentions.swift */; };
+		DC57A5A6206D1CBE00005E6D /* SFUserDefaultsExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A4206D1CBE00005E6D /* SFUserDefaultsExtentions.swift */; };
+		DC57A5A8206D479700005E6D /* SFUIButtonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */; };
+		DC57A5A9206D479700005E6D /* SFUIButtonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */; };
+		DC72C962206E697300664E96 /* SFUILabelExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72C961206E697300664E96 /* SFUILabelExtentions.swift */; };
+		DC72C963206E697300664E96 /* SFUILabelExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72C961206E697300664E96 /* SFUILabelExtentions.swift */; };
 		FCA31B3720B93DCC3535798AAF45BC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		FE243CE719A1EE46342421AD2659C920 /* SFLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E387628485F58E7DA3E3BF17AF5278F1 /* SFLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -67,10 +71,12 @@
 		B9A9002FA03ABDF7FE0EE7171D4EA833 /* Pods_SFLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7EB535EFA43B2D05E006951D91343F /* Pods-SFLibrary_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFLibrary_Tests-resources.sh"; sourceTree = "<group>"; };
 		DB3DF248D3E52776F0F50CB29E806696 /* Pods-SFLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC38B27D206AA8A100DA9C89 /* UIViewExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtentions.swift; path = SFLibrary/Classes/UIViewExtentions.swift; sourceTree = "<group>"; };
-		DC57A59E206D189500005E6D /* UIColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtentions.swift; path = SFLibrary/Classes/UIColorExtentions.swift; sourceTree = "<group>"; };
-		DC57A5A1206D1ABA00005E6D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = SFLibrary/Classes/Utils.swift; sourceTree = "<group>"; };
-		DC57A5A4206D1CBE00005E6D /* UserDefaultsExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtention.swift; path = SFLibrary/Classes/UserDefaultsExtention.swift; sourceTree = "<group>"; };
+		DC38B27D206AA8A100DA9C89 /* SFUIViewExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUIViewExtentions.swift; path = SFLibrary/Classes/SFUIViewExtentions.swift; sourceTree = "<group>"; };
+		DC57A59E206D189500005E6D /* SFUIColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUIColorExtentions.swift; path = SFLibrary/Classes/SFUIColorExtentions.swift; sourceTree = "<group>"; };
+		DC57A5A1206D1ABA00005E6D /* SFUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUtils.swift; path = SFLibrary/Classes/SFUtils.swift; sourceTree = "<group>"; };
+		DC57A5A4206D1CBE00005E6D /* SFUserDefaultsExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUserDefaultsExtentions.swift; path = SFLibrary/Classes/SFUserDefaultsExtentions.swift; sourceTree = "<group>"; };
+		DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUIButtonExtentions.swift; path = SFLibrary/Classes/SFUIButtonExtentions.swift; sourceTree = "<group>"; };
+		DC72C961206E697300664E96 /* SFUILabelExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUILabelExtentions.swift; path = SFLibrary/Classes/SFUILabelExtentions.swift; sourceTree = "<group>"; };
 		E387628485F58E7DA3E3BF17AF5278F1 /* SFLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFLibrary-umbrella.h"; sourceTree = "<group>"; };
 		E44B1817515D3E9A108BBFFC6D490D83 /* Pods-SFLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEC0ECB7FD874087F4AE38772CC7D2A4 /* Pods_SFLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,10 +142,12 @@
 		15628669D5CBBF39907E305EC56644DC /* SFLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				DC38B27D206AA8A100DA9C89 /* UIViewExtentions.swift */,
-				DC57A59E206D189500005E6D /* UIColorExtentions.swift */,
-				DC57A5A1206D1ABA00005E6D /* Utils.swift */,
-				DC57A5A4206D1CBE00005E6D /* UserDefaultsExtention.swift */,
+				DC38B27D206AA8A100DA9C89 /* SFUIViewExtentions.swift */,
+				DC57A59E206D189500005E6D /* SFUIColorExtentions.swift */,
+				DC57A5A1206D1ABA00005E6D /* SFUtils.swift */,
+				DC57A5A4206D1CBE00005E6D /* SFUserDefaultsExtentions.swift */,
+				DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */,
+				DC72C961206E697300664E96 /* SFUILabelExtentions.swift */,
 				12395769387698C73B3E232D082F7278 /* Pod */,
 				D7C1AD7FD55B2BE8D1AAA8BF649A697C /* Support Files */,
 			);
@@ -353,11 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC72C962206E697300664E96 /* SFUILabelExtentions.swift in Sources */,
 				37BB461C35DD04F255B880471D27C211 /* Pods-SFLibrary_Example-dummy.m in Sources */,
-				DC57A59F206D189500005E6D /* UIColorExtentions.swift in Sources */,
-				DC57A5A5206D1CBE00005E6D /* UserDefaultsExtention.swift in Sources */,
-				DC38B27E206AA8A100DA9C89 /* UIViewExtentions.swift in Sources */,
-				DC57A5A2206D1ABA00005E6D /* Utils.swift in Sources */,
+				DC57A5A8206D479700005E6D /* SFUIButtonExtentions.swift in Sources */,
+				DC57A59F206D189500005E6D /* SFUIColorExtentions.swift in Sources */,
+				DC57A5A5206D1CBE00005E6D /* SFUserDefaultsExtentions.swift in Sources */,
+				DC38B27E206AA8A100DA9C89 /* SFUIViewExtentions.swift in Sources */,
+				DC57A5A2206D1ABA00005E6D /* SFUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +375,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC72C963206E697300664E96 /* SFUILabelExtentions.swift in Sources */,
 				31C75D643E38D1072C32CCF50F16574C /* SFLibrary-dummy.m in Sources */,
-				DC57A5A0206D189500005E6D /* UIColorExtentions.swift in Sources */,
-				DC57A5A6206D1CBE00005E6D /* UserDefaultsExtention.swift in Sources */,
-				DC38B27F206AACC800DA9C89 /* UIViewExtentions.swift in Sources */,
-				DC57A5A3206D1ABA00005E6D /* Utils.swift in Sources */,
+				DC57A5A9206D479700005E6D /* SFUIButtonExtentions.swift in Sources */,
+				DC57A5A0206D189500005E6D /* SFUIColorExtentions.swift in Sources */,
+				DC57A5A6206D1CBE00005E6D /* SFUserDefaultsExtentions.swift in Sources */,
+				DC38B27F206AACC800DA9C89 /* SFUIViewExtentions.swift in Sources */,
+				DC57A5A3206D1ABA00005E6D /* SFUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

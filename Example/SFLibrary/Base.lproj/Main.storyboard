@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,18 +36,39 @@
                                     <constraint firstAttribute="width" constant="100" id="x1H-bM-6jN"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJk-CW-X9I">
+                                <rect key="frame" x="36" y="617" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nim-K2-ALJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqO-sq-pw4">
+                                <rect key="frame" x="36" y="571.5" width="303" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D0i-mJ-lRE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8Xj-1l-PqN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zJk-CW-X9I" secondAttribute="trailing" constant="20" id="TDz-gD-x1z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eqO-sq-pw4" secondAttribute="trailing" constant="20" id="VAy-nn-nvM"/>
                             <constraint firstItem="VTV-8E-CnG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Vh3-Pa-rCV"/>
+                            <constraint firstItem="eqO-sq-pw4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="n8M-FJ-iEw"/>
                             <constraint firstItem="D0i-mJ-lRE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="rMy-cg-bKn"/>
+                            <constraint firstItem="zJk-CW-X9I" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="teF-p2-uKd"/>
+                            <constraint firstItem="zJk-CW-X9I" firstAttribute="top" secondItem="eqO-sq-pw4" secondAttribute="bottom" constant="25" id="wMe-mG-jMi"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zJk-CW-X9I" secondAttribute="bottom" constant="20" id="xPD-Xs-G0m"/>
                             <constraint firstItem="VTV-8E-CnG" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="yLv-Wk-BMJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnTest" destination="zJk-CW-X9I" id="b7f-Zb-frV"/>
                         <outlet property="imgNewTest" destination="D0i-mJ-lRE" id="kmd-Ky-6T0"/>
                         <outlet property="imgTest" destination="VTV-8E-CnG" id="HCL-MK-s5B"/>
+                        <outlet property="lblTest" destination="eqO-sq-pw4" id="9gM-lj-whN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

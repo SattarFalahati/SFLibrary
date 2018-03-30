@@ -1,5 +1,5 @@
 //
-//  UIViewExtentions.swift
+//  SFUIViewExtentions.swift
 //  Pods-SFLibrary_Example
 //
 //  Created by sattar.falahati on 27/03/18.
