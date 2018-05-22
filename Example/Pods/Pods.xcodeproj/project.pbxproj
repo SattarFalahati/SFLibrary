@@ -26,6 +26,10 @@
 		DC57A5A9206D479700005E6D /* SFUIButtonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */; };
 		DC72C962206E697300664E96 /* SFUILabelExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72C961206E697300664E96 /* SFUILabelExtentions.swift */; };
 		DC72C963206E697300664E96 /* SFUILabelExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72C961206E697300664E96 /* SFUILabelExtentions.swift */; };
+		DCC3B6402085E9D70001AA18 /* SFUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC3B63F2085E9D70001AA18 /* SFUIDevice.swift */; };
+		DCC3B6412085E9D70001AA18 /* SFUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC3B63F2085E9D70001AA18 /* SFUIDevice.swift */; };
+		DCE7561620B462CF00449CAA /* SFUIViewExtension2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7561520B462CF00449CAA /* SFUIViewExtension2.swift */; };
+		DCE7561720B462CF00449CAA /* SFUIViewExtension2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7561520B462CF00449CAA /* SFUIViewExtension2.swift */; };
 		FCA31B3720B93DCC3535798AAF45BC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		FE243CE719A1EE46342421AD2659C920 /* SFLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E387628485F58E7DA3E3BF17AF5278F1 /* SFLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -77,6 +81,8 @@
 		DC57A5A4206D1CBE00005E6D /* SFUserDefaultsExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUserDefaultsExtentions.swift; path = SFLibrary/Classes/SFUserDefaultsExtentions.swift; sourceTree = "<group>"; };
 		DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUIButtonExtentions.swift; path = SFLibrary/Classes/SFUIButtonExtentions.swift; sourceTree = "<group>"; };
 		DC72C961206E697300664E96 /* SFUILabelExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUILabelExtentions.swift; path = SFLibrary/Classes/SFUILabelExtentions.swift; sourceTree = "<group>"; };
+		DCC3B63F2085E9D70001AA18 /* SFUIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUIDevice.swift; path = SFLibrary/Classes/SFUIDevice.swift; sourceTree = "<group>"; };
+		DCE7561520B462CF00449CAA /* SFUIViewExtension2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFUIViewExtension2.swift; path = SFLibrary/Classes/SFUIViewExtension2.swift; sourceTree = "<group>"; };
 		E387628485F58E7DA3E3BF17AF5278F1 /* SFLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFLibrary-umbrella.h"; sourceTree = "<group>"; };
 		E44B1817515D3E9A108BBFFC6D490D83 /* Pods-SFLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEC0ECB7FD874087F4AE38772CC7D2A4 /* Pods_SFLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,12 +148,14 @@
 		15628669D5CBBF39907E305EC56644DC /* SFLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				DCE7561520B462CF00449CAA /* SFUIViewExtension2.swift */,
 				DC38B27D206AA8A100DA9C89 /* SFUIViewExtentions.swift */,
 				DC57A59E206D189500005E6D /* SFUIColorExtentions.swift */,
 				DC57A5A1206D1ABA00005E6D /* SFUtils.swift */,
 				DC57A5A4206D1CBE00005E6D /* SFUserDefaultsExtentions.swift */,
 				DC57A5A7206D479700005E6D /* SFUIButtonExtentions.swift */,
 				DC72C961206E697300664E96 /* SFUILabelExtentions.swift */,
+				DCC3B63F2085E9D70001AA18 /* SFUIDevice.swift */,
 				12395769387698C73B3E232D082F7278 /* Pod */,
 				D7C1AD7FD55B2BE8D1AAA8BF649A697C /* Support Files */,
 			);
@@ -365,7 +373,9 @@
 				37BB461C35DD04F255B880471D27C211 /* Pods-SFLibrary_Example-dummy.m in Sources */,
 				DC57A5A8206D479700005E6D /* SFUIButtonExtentions.swift in Sources */,
 				DC57A59F206D189500005E6D /* SFUIColorExtentions.swift in Sources */,
+				DCE7561620B462CF00449CAA /* SFUIViewExtension2.swift in Sources */,
 				DC57A5A5206D1CBE00005E6D /* SFUserDefaultsExtentions.swift in Sources */,
+				DCC3B6402085E9D70001AA18 /* SFUIDevice.swift in Sources */,
 				DC38B27E206AA8A100DA9C89 /* SFUIViewExtentions.swift in Sources */,
 				DC57A5A2206D1ABA00005E6D /* SFUtils.swift in Sources */,
 			);
@@ -379,7 +389,9 @@
 				31C75D643E38D1072C32CCF50F16574C /* SFLibrary-dummy.m in Sources */,
 				DC57A5A9206D479700005E6D /* SFUIButtonExtentions.swift in Sources */,
 				DC57A5A0206D189500005E6D /* SFUIColorExtentions.swift in Sources */,
+				DCE7561720B462CF00449CAA /* SFUIViewExtension2.swift in Sources */,
 				DC57A5A6206D1CBE00005E6D /* SFUserDefaultsExtentions.swift in Sources */,
+				DCC3B6412085E9D70001AA18 /* SFUIDevice.swift in Sources */,
 				DC38B27F206AACC800DA9C89 /* SFUIViewExtentions.swift in Sources */,
 				DC57A5A3206D1ABA00005E6D /* SFUtils.swift in Sources */,
 			);
