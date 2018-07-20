@@ -9,7 +9,7 @@ import Foundation
 
 extension UserDefaults
 {
-    /// check for is first launch - only true on first invocation after app install, false on all further invocations
+    /// check for is the first launch - only true on first invocation after app install, false on all further invocations
     public static func isFirstLaunchApp() -> Bool
     {
         let hasBeenLaunchedBeforeFlag = "hasBeenLaunchedBeforeFlag"

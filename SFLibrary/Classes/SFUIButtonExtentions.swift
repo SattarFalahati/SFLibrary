@@ -9,6 +9,17 @@ import Foundation
 
 extension UIButton
 {
+    /**
+     Set attributed title for button, Use this method to have a button with two diffrent font and font color
+     - parameters:
+        - string: Complete string
+        - baseFont: Font
+        - baseColor: Color
+        - attributedString: String that you want to have a diffrent color and font
+        - attributedFont: Font
+        - attributedColor: Color
+        - state: state of button
+     */
     public func setAttributedTitleWith(string: NSString, baseFont: UIFont? , baseColor: UIColor?, attributedString: NSString, attributedFont: UIFont?, attributedColor: UIColor?, state: UIControlState)
     {
         var baseF = baseFont
@@ -32,5 +43,23 @@ extension UIButton
         fainalString.addAttributes(attributed as! [NSAttributedStringKey : Any], range: myRange)
         
         self.setAttributedTitle(fainalString, for: state)
+    }
+    
+    /**
+     Set Image with diffrent color
+     - parameters:
+        - color: image color
+        - imgName: string of image name
+        - state: Control state of ui button *** If not set == .normal ***
+     */
+    public func setImage(name: String, color: UIColor, state: UIControlState)
+    {
+        let image = UIImage.imageWith(name: name, tintColor: color)
+        self.setImage(image, for: state)
+    }
+    
+    public func setImage(imgName: String, color: UIColor)
+    {
+        setImage(name: imgName, color: color, state: .normal)
     }
 }

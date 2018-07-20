@@ -40,7 +40,7 @@ class ViewController: UIViewController
         // Create image from view
         // imgNewTest.image = imgTest.createImageFromView()
          imgNewTest.image = UIColor().colorWithHex(string: "d5e5ed", colorAlpha: 1).imageFromColor
-        imgNewTest.roundViewWith(borderColor: .clear, borderWidth: 0)
+//        imgNewTest.roundViewWith(borderColor: .clear, borderWidth: 0)
         
         // Shadow
         // imgTest.setShadowWith(shadowColor: .white, shadowOffset: CGSize(width: 0, height: 0), shadowOpacity: 1, shadowRadius: 10)

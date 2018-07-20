@@ -11,6 +11,36 @@ extension UIView
 {
     // MARK: - Border and corners
     
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat
+        {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor
+        {
+        get {
+            return .clear
+        }
+        set {
+            layer.borderColor = newValue.cgColor
+        }
+    }
+    
     public func roundViewWith(borderColor: UIColor, borderWidth: CGFloat)
     {
         cornerRadiusWith(radius: self.layer.frame.size.width / 2, borderColor: borderColor, borderWidth: borderWidth)
