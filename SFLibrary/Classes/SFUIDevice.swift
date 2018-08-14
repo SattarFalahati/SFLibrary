@@ -65,4 +65,8 @@ extension UIDevice
     public func IS_IPHONE_6P() -> Bool {
         return UIDevice().screenType == .iPhones_6Plus_6sPlus_7Plus_8Plus
     }
+    
+    public static func IS_IPHONE_X() -> Bool {
+        return UIDevice().screenType == .iPhoneX
+    }
 }

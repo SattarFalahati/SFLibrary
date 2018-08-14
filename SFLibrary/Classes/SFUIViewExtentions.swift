@@ -61,6 +61,60 @@ extension UIView
         self.clipsToBounds = true
     }
     
+    public func setBottomCornerRadiusWith(radius: CGFloat, borderColor: UIColor, borderWidth: CGFloat)
+    {
+        if #available(iOS 11.0, *) {
+            self.clipsToBounds = true
+            self.layer.cornerRadius = radius
+            self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+            
+            if borderWidth != 0 {
+                self.setBorderWith(borderColor: borderColor, borderWidth: borderWidth)
+            }
+        }
+        else{
+            self.roundCornersWith(corners: [.bottomLeft , .bottomRight], radius: radius, borderColor: borderColor, borderWidth: borderWidth)
+        }
+    }
+    
+    public func setTopCornerRadiusWith(radius: CGFloat, borderColor: UIColor, borderWidth: CGFloat)
+    {
+        if #available(iOS 11.0, *) {
+            self.clipsToBounds = true
+            self.layer.cornerRadius = radius
+            self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+           
+            if borderWidth != 0 {
+                self.setBorderWith(borderColor: borderColor, borderWidth: borderWidth)
+            }
+        }
+        else{
+            self.roundCornersWith(corners: [.topRight , .topLeft], radius: radius, borderColor: borderColor, borderWidth: borderWidth)
+        }
+    }
+    
+    public func roundCornersWith(corners: UIRectCorner, radius: CGFloat, borderColor: UIColor, borderWidth: CGFloat)
+    {
+        // Setup bezier path
+        let bezPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius)).cgPath
+        
+        // Setup round corners
+        let rectShape = CAShapeLayer()
+        rectShape.frame = self.bounds
+        rectShape.path = bezPath
+        self.layer.mask = rectShape
+        
+        // Setup border
+        let rectShapeForBorder = CAShapeLayer()
+        rectShapeForBorder.path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius)).cgPath
+        rectShapeForBorder.strokeColor = borderColor.cgColor
+        rectShapeForBorder.fillColor = UIColor.clear.cgColor
+        rectShapeForBorder.lineWidth = borderWidth
+        rectShapeForBorder.frame = .zero
+        self.layer.addSublayer(rectShapeForBorder)
+    }
+    
+    
     // MARK: - Image creation
     
     public func createImageFromView () -> UIImage?

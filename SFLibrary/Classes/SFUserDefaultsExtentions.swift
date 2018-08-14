@@ -20,4 +20,36 @@ extension UserDefaults
         }
         return isFirstLaunch
     }
+    
+    // MARK: Use it to show what's new in this version
+    
+   public func hasAppBeenUpdatedSinceLastRun() -> Bool
+    {
+        // Get app version
+        var bundleInfo = Bundle.main.infoDictionary!
+        if let currentVersion = bundleInfo["CFBundleShortVersionString"] as? String {
+            let userDefaults = UserDefaults.standard
+            
+            // If app version is not changed means that app hasen't been updated.
+            if userDefaults.string(forKey: "currentVersion") == (currentVersion) {
+                return false
+            }
+            
+            // Save the version
+            userDefaults.set(currentVersion, forKey: "currentVersion")
+            userDefaults.synchronize()
+
+            // If app never been lunched before, means it's first downlod
+            if UserDefaults.isFirstLaunchApp() {
+                return false
+            }
+            
+            return true
+        }
+        return false;
+    }
 }
+
+
+
+

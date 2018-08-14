@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import AudioToolbox
 
-class SFUtils: NSObject
+
+open class SFUtils: NSObject
 {
     
     // MARK: - Navigation bar
@@ -33,5 +35,17 @@ class SFUtils: NSObject
         let barBtnItem = UIBarButtonItem(customView: btn)
         return barBtnItem
     }
+
+    // MARK: - feedback motions
     
+    public func giveMeSomeFeedbackMotion()
+    {
+        if #available(iOS 10.0, *) {
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }
+        else {
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
+    }
 }

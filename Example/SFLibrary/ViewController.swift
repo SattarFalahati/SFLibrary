@@ -55,5 +55,10 @@ class ViewController: UIViewController
         lblTest.setAttributedTextWith(string: "this is a label", baseFont: UIFont.systemFont(ofSize: 22), baseColor: .cyan, attributedString: "label", attributedFont: UIFont.boldSystemFont(ofSize: 40), attributedColor: .white, state: .normal)
         
     }
+    @IBAction func btnAction(_ sender: Any)
+    {
+        SFUtils().giveMeSomeFeedbackMotion()
+        
+    }
 }
 
