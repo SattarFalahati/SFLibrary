@@ -49,3 +49,12 @@ open class SFUtils: NSObject
         }
     }
 }
+
+
+public struct SFDefines
+{
+    // MARK: Generals
+    public static let screenSize = UIScreen.main.bounds
+    public static let screenWidth = screenSize.width
+    public static let screenHeight = screenSize.height
+}

@@ -33,4 +33,18 @@ extension UILabel
         
         self.attributedText = fainalString
     }
+    
+    
+    public func changeFontWithAnimation(font: UIFont, duration: TimeInterval)
+    {
+        let labelScale = self.font.pointSize / font.pointSize
+        self.font = font
+        let oldTransform = transform
+        transform = transform.scaledBy(x: labelScale, y: labelScale)
+        setNeedsUpdateConstraints()
+        UIView.animate(withDuration: duration) {
+            self.transform = oldTransform
+            self.layoutIfNeeded()
+        }
+    }
 }

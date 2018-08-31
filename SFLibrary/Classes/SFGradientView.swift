@@ -8,28 +8,28 @@
 import UIKit
 
 @IBDesignable
-class SFGradientView: UIView
+public class SFGradientView: UIView
 {
     
-    @IBInspectable var firstColor: UIColor = UIColor.white {
+    @IBInspectable public var firstColor: UIColor = UIColor.white {
         didSet {
             setupView()
         }
     }
     
-    @IBInspectable var secondColor: UIColor = UIColor.white {
+    @IBInspectable public var secondColor: UIColor = UIColor.white {
         didSet {
             setupView()
         }
     }
     
-    @IBInspectable var horizontalGradient: Bool = false {
+    @IBInspectable public var horizontalGradient: Bool = false {
         didSet {
             setupView()
         }
     }
     
-    override class var layerClass: AnyClass {
+    override public class var layerClass: AnyClass {
         get {
             return CAGradientLayer.self
         }
