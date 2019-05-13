@@ -20,7 +20,7 @@ open class SFUtils: NSObject
         UINavigationBar.appearance().backgroundColor = UIColor.clear
         UINavigationBar.appearance().isTranslucent = false
         
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor:fontColor]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor:fontColor]
         
         UINavigationBar.appearance().setBackgroundImage(backgroundColor.imageFromColor, for: .default)
     }

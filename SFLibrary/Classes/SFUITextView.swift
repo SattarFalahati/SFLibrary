@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable open class SFUITextView: UITextView
 {
-    open let placeholderLabel: UILabel = UILabel()
+    public let placeholderLabel: UILabel = UILabel()
     
     private var placeholderLabelConstraints = [NSLayoutConstraint]()
     
@@ -86,7 +86,7 @@ import UIKit
     
     private func commonInit()
     {
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: UITextView.textDidChangeNotification, object: nil)
         
         placeholderLabel.font = font
         placeholderLabel.textColor = placeholderColor
@@ -135,7 +135,7 @@ import UIKit
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UITextViewTextDidChange, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UITextView.textDidChangeNotification, object: nil)
     }
     
 }

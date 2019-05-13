@@ -9,7 +9,7 @@ import Foundation
 
 extension UILabel
 {
-    public func setAttributedTextWith(string: NSString, baseFont: UIFont? , baseColor: UIColor?, attributedString: NSString, attributedFont: UIFont?, attributedColor: UIColor?, state: UIControlState)
+    public func setAttributedTextWith(string: NSString, baseFont: UIFont? , baseColor: UIColor?, attributedString: NSString, attributedFont: UIFont?, attributedColor: UIColor?, state: UIControl.State)
     {
         var baseF = baseFont
         var baseC = baseColor
@@ -23,13 +23,13 @@ extension UILabel
         if attributedC == nil { attributedC = self.textColor }
         
         // Setup attributes
-        let base : NSDictionary = [NSAttributedStringKey.font: baseF!, NSAttributedStringKey.foregroundColor: baseC!]
-        let attributed : NSDictionary = [NSAttributedStringKey.font: attributedF!, NSAttributedStringKey.foregroundColor: attributedC!]
+        let base : NSDictionary = [NSAttributedString.Key.font: baseF!, NSAttributedString.Key.foregroundColor: baseC!]
+        let attributed : NSDictionary = [NSAttributedString.Key.font: attributedF!, NSAttributedString.Key.foregroundColor: attributedC!]
         
-        let fainalString = NSMutableAttributedString(string: string as String, attributes: base as? [NSAttributedStringKey : Any])
+        let fainalString = NSMutableAttributedString(string: string as String, attributes: base as? [NSAttributedString.Key : Any])
         
         let myRange = string.range(of: attributedString as String)
-        fainalString.addAttributes(attributed as! [NSAttributedStringKey : Any], range: myRange)
+        fainalString.addAttributes(attributed as! [NSAttributedString.Key : Any], range: myRange)
         
         self.attributedText = fainalString
     }
